@@ -9,6 +9,6 @@ services:
       dockerfile: ./Dockerfile
     volumes:
       - type: bind
-        source: ./downloaded
+        source: ${DOWNLOAD_FOLDER}
         target: /downloaded
     restart: no
